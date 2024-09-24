@@ -1,35 +1,51 @@
 <!-- navbar.html -->
  <style>
     /* style.css */
+/* Reset margins and padding for body and html to remove gaps */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Style the iframe to take full width without side gaps */
+iframe {
+    display: block;   /* Prevents default inline spacing */
+    width: 100%;      /* Full width of the parent container */
+    /* height: 100px;    Set the height according to the navbar */
+    border: none;     /* Remove any default borders */
+    /* overflow: hidden; Hide overflow if content spills */
+}
+
+/* Navbar styles */
 nav {
-    background-color: #333;
-    padding: 1rem;
+    background-color: #333; /* Dark background for the navbar */
+    padding: 1rem;          /* Padding around the navbar content */
+    width: 100%;            /* Full width to fit the iframe */
+    box-sizing: border-box;  /* Ensures padding doesn't affect width */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+    list-style: none;        /* Remove bullet points from list */
+    display: flex;           /* Flexbox to align items */
+    justify-content: space-around; /* Space out the nav items */
+    margin: 0;               /* Remove default margin */
+    padding: 0;              /* Remove default padding */
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 1rem;          /* Space between list items */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white;            /* White text color for links */
+    text-decoration: none;   /* Remove underline */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
-iframe {
-            display: block; /* Prevents extra spacing below the iframe */
-            width: 100%;    /* Makes the iframe take up the full width */
-            height: 100px;  /* Adjust height based on navbar size */
-            border: none;   /* Removes default border */
-        }
+
 
  </style>
 <nav>
