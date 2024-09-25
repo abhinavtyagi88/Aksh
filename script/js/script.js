@@ -1,6 +1,6 @@
 class CustomNavbar extends HTMLElement {
     connectedCallback() {
-        fetch('navbar.html')
+        fetch('../../navbar.html')
             .then(response => response.text())
             .then(data => {
                 this.innerHTML = data;
