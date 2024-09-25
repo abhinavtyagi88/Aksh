@@ -10,19 +10,7 @@
     <custom-navbar></custom-navbar>
     <object type="text/html" data="navbar.html" style="width:100%; height:100px;"></object>
 
-    <script>
-        class CustomNavbar extends HTMLElement {
-            connectedCallback() {
-                fetch('navbar.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        this.innerHTML = data;
-                    })
-                    .catch(error => console.error('Error loading navbar:', error));
-            }
-        }
-        customElements.define('custom-navbar', CustomNavbar);
-    </script>
+   
     <h1>Welcome to the Home Page</h1>
     <p>Some content here...</p>
 
